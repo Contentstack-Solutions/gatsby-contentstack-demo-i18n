@@ -1,6 +1,6 @@
 import React from 'react'
 import { IntlContextConsumer, changeLocale } from 'gatsby-plugin-intl'
-import { locales } from '../i18n/languages'
+import { locales } from '../intl/languages'
 
 const LanguageSwitcher = props => {
   const languageClicked = (e, language) => {
