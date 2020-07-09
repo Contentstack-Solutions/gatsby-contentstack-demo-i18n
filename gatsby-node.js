@@ -1,42 +1,52 @@
-const path = require('path');
+const path = require(`path`)
 
-exports.createPages = ({ actions, graphql }) => {
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions
+
+  deletePage(page)
+
+  createPage({
+      ...page,
+      context: {
+          ...page.context,
+          locale: page.context.intl.language
+      },
+  })
+}
+
+exports.createPages = async ({ actions, graphql }) => {
+  const component = path.resolve(`src/components/blog.js`)
   const { createPage } = actions
 
-  return graphql(`
+  const result = await graphql(`
     {
-      allContentstackBlogs(limit: 1000) {
+      allContentstackBlogs {
         edges {
           node {
-          	id
+            id
             url
+            locale
           }
         }
       }
     }
-  `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
+  `)
 
-    const blogs = result.data.allContentstackBlogs.edges
+  if (result.errors) {
+    result.errors.forEach(e => console.error(e.toString()))
+    return Promise.reject(result.errors)
+  }
 
-    blogs.forEach(edge => {
-      const id = edge.node.id
-      createPage({
-        path: edge.node.url,
-        component: path.resolve(
-          `src/components/blog.js`
-        ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
-      })
+  const blogs = result.data.allContentstackBlogs.edges
+
+  blogs.forEach(({ node }) => {
+    createPage({
+      path: node.url,
+      component,
+      context: {
+        locale: node.locale,
+        url: node.url
+      },
     })
-
   })
 }
-
-

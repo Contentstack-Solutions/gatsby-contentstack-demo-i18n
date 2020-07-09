@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-
+import { graphql } from 'gatsby'
+import { Link } from 'gatsby-plugin-intl'
 import Layout from '../components/layout'
 
 const IndexPage = ({ data }) => {
   const blogs = data.allContentstackBlogs.edges
-  console.log('blogs', blogs)
+
   return (
     <Layout>
       <div className="container">
@@ -34,10 +34,10 @@ const IndexPage = ({ data }) => {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query BlogQuery {
-    allContentstackBlogs(
-      limit: 1000
-      sort: { order: ASC, fields: [created_at] }
+  query GetBlogs($locale: String!) {
+    allContentstackBlogs (
+      sort: { order: ASC, fields: [created_at] },
+      filter: {locale: { eq: $locale } }
     ) {
       edges {
         node {

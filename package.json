@@ -4,6 +4,7 @@
   "version": "1.0.1",
   "dependencies": {
     "gatsby": "^2.0.0",
+    "gatsby-plugin-intl": "^0.3.3",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-source-contentstack": "^2.2.3",
     "react": "^16.8.6",

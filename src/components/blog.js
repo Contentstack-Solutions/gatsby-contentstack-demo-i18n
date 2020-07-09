@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import renderHTML from 'react-render-html'
-
 import Layout from './layout'
 
 const BlogPage = ({ data }) => {
@@ -33,8 +32,8 @@ const BlogPage = ({ data }) => {
 export default BlogPage
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
-    contentstackBlogs(id: { eq: $id }) {
+  query GetBlogPost($url: String!, $locale: String!) {
+    contentstackBlogs(url: { eq: $url }, locale: { eq: $locale }) {
       title
       id
       url
