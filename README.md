@@ -11,6 +11,6 @@ Additionally, this sample app is a demo on how to use [Contentstack’s](https:/
 <img src='https://images.contentstack.io/v3/assets/bltf2fb14dd3176c6f6/bltae0e68489b07b675/5b91fc8a1e3e32257c11a516/download' width='650' height='550'/>
  
 ## Documentation
- 
 Read Contentstack [docs](https://www.contentstack.com/docs)
+
 Learn [Gatsby](https://www.gatsbyjs.org/docs/).
