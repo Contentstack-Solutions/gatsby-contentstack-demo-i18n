@@ -8,15 +8,11 @@ Additionally, this sample app is a demo on how to use [Contentstack's gatsby-sou
 
 ## Screenshots
 
-<p>
-  Home Page in English:
-  <img src="screenshots/home-english.png" alt="English">
-</p>
-
-<p>
-  Home Page in Spanish:
-  <img src="screenshots/home-spanish.png" alt="Spanish">
-</p>
+Home Page in English:
+![English](screenshots/home-english.png)
+  
+Home Page in Spanish:
+![Spanish](screenshots/home-spanish.png)
 
 ## Running the example
 1.  Complete the [Gatsby and Contentstack Sample App Tutorial](https://www.contentstack.com/docs/developers/sample-apps/build-a-sample-website-using-gatsby-and-contentstack)
