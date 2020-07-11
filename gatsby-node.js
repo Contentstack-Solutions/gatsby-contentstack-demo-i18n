@@ -15,7 +15,7 @@ exports.onCreatePage = ({ page, actions }) => {
 }
 
 exports.createPages = async ({ actions, graphql }) => {
-  const component = path.resolve(`src/components/blog.js`)
+  const component = path.resolve(`src/templates/blog.js`)
   const { createPage } = actions
 
   const result = await graphql(`

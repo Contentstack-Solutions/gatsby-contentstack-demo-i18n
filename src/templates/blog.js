@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import renderHTML from 'react-render-html'
-import Layout from './layout'
+import Layout from '../components/layout'
 
 const BlogPage = ({ data }) => {
   const blog = data.contentstackBlogs
