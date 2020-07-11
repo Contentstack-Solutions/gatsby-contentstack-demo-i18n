@@ -8,12 +8,12 @@ Additionally, this sample app is a demo on how to use [Contentstack's gatsby-sou
 
 ## Screenshots
 
-<p align="left">
+<p>
   Home Page in English:
   <img src="screenshots/home-english.png" alt="English">
 </p>
 
-<p align="left">
+<p>
   Home Page in Spanish:
   <img src="screenshots/home-spanish.png" alt="Spanish">
 </p>
