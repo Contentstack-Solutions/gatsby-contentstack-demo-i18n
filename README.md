@@ -4,16 +4,16 @@
 
 **About this project**: This project extends Contentstack's Gatsby Static Site Demo. It requries you to complete the [tutorial to create an app using Gatsby and Contentstack](https://www.contentstack.com/docs/developers/sample-apps/build-a-sample-website-using-gatsby-and-contentstack). After completing the tutorial, add the `Spanish (es)` language to your stack and publish the site's content to the environment configured in `gatsby-config.js`.
 
-Additionally, this sample app is a demo on how to use [Contentstack’s](https://www.contentstack.com/docs) source plugin, [gatsby-source-plugin](https://github.com/contentstack/gatsby-source-contentstack) along with Gatsby.
+Additionally, this sample app is a demo on how to use [Contentstack's gatsby-source-plugin](https://github.com/contentstack/gatsby-source-contentstack).
 
 ## Screenshots
 
-<p>
+<p align="left">
   Home Page in English:
   <img src="screenshots/home-english.png" alt="English">
 </p>
 
-<p>
+<p align="left">
   Home Page in Spanish:
   <img src="screenshots/home-spanish.png" alt="Spanish">
 </p>
@@ -25,4 +25,4 @@ Additionally, this sample app is a demo on how to use [Contentstack’s](https:/
 
 ## Help
 - [Contentstack Documentation](https://www.contentstack.com/docs)
-- [Gatsby Documentation](https://www.gatsbyjs.org/docs/).
+- [Gatsby Documentation](https://www.gatsbyjs.org/docs/)
