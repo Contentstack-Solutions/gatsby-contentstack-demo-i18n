@@ -9,9 +9,11 @@ Additionally, this sample app is a demo on how to use [Contentstack's gatsby-sou
 ## Screenshots
 
 Home Page in English:
+
 ![English](screenshots/home-english.png)
   
 Home Page in Spanish:
+
 ![Spanish](screenshots/home-spanish.png)
 
 ## Running the example
